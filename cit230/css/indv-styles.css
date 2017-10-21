@@ -1,0 +1,56 @@
+  h1 {
+      color: plum;
+     font-family: 'Cookie', cursive;
+      font-size: 7em;
+      padding-left: 5px;
+      background-color: lightcyan;
+  }
+
+nav {
+    border-color: black;
+}
+nav ul{
+    border-color: black;
+    border-style: solid;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+  nav ul li{
+      display: inline-block;
+      color: plum;
+      font-family: 'Droid Serif', serif;
+      border-color: black;
+     padding-right: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      
+
+  }
+
+  body {
+      font-family: 'Droid Serif', serif;
+      border-color: plum;
+      border-style: solid;
+
+  }
+
+  div {
+      font-family: 'Droid Serif', serif;
+  }
+
+  p {
+      font-family: 'Droid Serif', serif;
+      border-color: black;
+  }
+
+  footer {
+      border: black;
+      background-color: black;
+      color: white;
+      font-family: 'Droid Serif', serif;
+  }
+
+ul.menu ul li{
+    padding-right: 15%;
+    display: inline-block;
+}
