@@ -27,6 +27,14 @@ nav ul{
 
   }
 
+nav.home {
+    padding-left: 200px; padding-right: 200px;
+}
+
+nav.home ul{
+   padding-left: 300px; padding-right: 200px;
+}
+
   body {
       font-family: 'Droid Serif', serif;
       border-color: plum;
@@ -51,6 +59,16 @@ nav ul{
   }
 
 ul.menu ul li{
-    padding-right: 15%;
+    padding-right: 19%;
     display: inline-block;
+}
+
+.page-layout {
+    display: flex; width: 100%;
+}
+.page-item {
+    margin: 2px; width: 100%;
+}
+.home {
+    padding-left: 200px;
 }
