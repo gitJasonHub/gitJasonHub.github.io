@@ -80,3 +80,14 @@ ul.menu ul li{
     background-position: center top;
     background-attachment: fixed;
 }
+
+@media screen and (max-width: 500px) {
+    h1 {font-size: 3em;}
+    nav ul li{display: list-item; list-style: none; color: plum; font-family: 'Droid Serif', serif;}
+    img{width: 100%; height: 100%}
+    nav.home {padding: 0px}
+     nav.home ul{padding: 0px}
+    video {width: 240px; height: 180px;}
+    .page-layout {display: inline}
+   
+}
