@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Yacht Menu</title>
+  <link href="../cit230/css/indv-styles.css" rel="stylesheet" type="text/css" >
+    
+    <script type="text/javascript">
+    
+    function myOrder() {
+            document.write("<h3>Processing Order.  Please wait.</h3>");
+        }
+        
+    function myCompanyName() {
+            window.alert(document.alertform.yourcompany.value + " is available for a discount.  Discount applied.");
+        }
+        
+    function myDisplayName() {
+            window.alert("Mouse here for instructions");
+        }
+
+        function myRollOver(obj) {
+            obj.innerHTML=("Welcome " + document.alertform.yourcompany.value);
+        }
+        function myRollOut(obj) {
+            obj.innerHTML = ("Please choose the items for your menu");   
+        }
+    </script>    
+    
+<style>
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+@import url('https://fonts.googleapis.com/css?family=Cookie');
+</style>
+</head>
+
+<body>
+<h1><img src="images/Sea%20turtle.png" alt="logo" style="width: 6%; height: 6%">Yacht Menu</h1>
+<p class="menu"> Rooftop Menu </p>
+    
+    
+<form name="alertform">
+     <label id="yourname">Enter Your Company Name for a discount</label>
+            <br>
+            <input type="text" id="yourcompany" name="company" placeholder="Please enter your company name" required>
+            <input type="button" value="Go" onClick="myCompanyName()">
+    <br>
+    <br>
+   
+<div onmouseover="myRollOver(this)" onmouseout="myRollOut(this)" style="background-color:plum; width:240px; height:20px; padding:40px;">Hello</div>
+
+    </form>
+      <p>Main dishes:</p>
+    <div class="page-layout">
+    
+       
+           <div class="page-item">Jumbo Shrimp</div>
+          <div class="page-item">Beef Tenderloin</div>
+            <div class="page-item">Chicken Cordon Bleu</div>
+    </div>
+        
+       <div class="page-layout">
+            <div class="page-item"><img src="images/shrimp.jpg" alt="shrimp" style="width:75%;height:75%"></div>
+            <div class="page-item"><img src="images/beeftender.jpg" alt="beef tenderloin" style="width:75%;height:75%"></div>
+            <div class="page-item"><img src="images/chickencordon.jpg" alt="chicken cordon bleu" style="width:75%;height:75%"></div></div>
+        
+        
+        Side Dishes:  
+        <div class="page-layout">
+           <div class="page-layout">Garlic Biscuits  </div>
+            <div class="page-layout">Fried Greens</div> 
+           <div class="page-layout">Pasta Carbonara </div>
+            <div class="page-layout">Yellow Rice  </div>
+           <div class="page-layout">Clams</div>
+            <div class="page-layout">Tri-bean Salad</div> </div>
+            
+         <div class="page-layout">
+        <div class="page-item"><img src="images/garlicbiscuits.jpg" alt="garlic biscuits" style="width:75%;height:75%"></div>
+        <div class="page-item"><img src="images/friedgreens.jpg" alt="fried greens" style="width:75%;height:75%"></div>
+        <div class="page-item"><img src="images/pastacarbinara.jpg" alt="pasta" style="width:75%;height:75%"></div>
+        <div class="page-item"><img src="images/yellowrice.jpg" alt="yellow rice" style="width:75%;height:75%"></div>
+        <div class="page-item"><img src="images/clams.jpg" alt="clams" style="width:75%;height:75%"></div>
+        <div class="page-item"><img src="images/tribeansalad.jpg" alt="tri-bean" style="width:75%;height:75%"></div>
+            </div>
+    
+ <input type="button" Value="Order from this Menu" onClick="myOrder()">
+
+    
+<footer>
+<p>Additional Resources:</p>
+    <ul>
+        <li><a href="indv-website/about-us.html">About us</a></li>
+        <li><a href="indv-website/customer-table.html">Top Customer(Table)</a></li>
+        <li><a href="indv-website/customer-list.html">Top Customer(List)</a></li>
+    </ul>
+</footer>
+    </body>
+</html>
