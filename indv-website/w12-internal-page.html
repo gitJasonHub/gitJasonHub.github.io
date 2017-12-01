@@ -1,0 +1,160 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+ <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>About Oval Occaions</title>
+     
+     <style>
+          #top-of-page{color: plum;}
+          #history{color: plum;}
+          #company-today{color: plum;}
+          #about-ceo{color: plum;}
+     </style>
+      <style>
+        #div2 {float: left;width: 500px;height: 175px;margin: 10px;padding: 10px; border: solid;}
+    </style>
+</head>
+    
+    <body>
+        <h1 id="top-of-page">About Oval Occasions</h1>
+        
+        <p>Find out more about the <a href="#about-ceo">CEO, Jason Newquist</a>, the <a href="#history">history of Oval Occasions</a>, or <a href="#company-today">Oval Occasions today.</a></p>
+
+        
+        
+<h2 id="about-ceo">About Jason Newquist, CEO</h2>
+        
+        <figure ondrop="drop(event)" ondragover="allowDrop(event)"><img src="images/jason-newquist.jpg" alt="CEO Jason Newquist" style="width:25%;height:25%" draggable="true" ondragstart="drag(event)" id="drag1"></figure>
+        
+<h2>Drag Top Pictures here!</h2> 
+    
+    
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+        
+  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>        
+        
+<br>  
+<br>
+<br>  
+<h2>Jason Newquist Hometown</h2>        
+  <div id="map" style="width:50%;height:300px"></div>
+
+            <script>
+                function myMap() {
+                    var myCenter = new google.maps.LatLng(47.5404, -122.6362);
+                        var mapCanvas = document.getElementById("map");
+                            var mapOptions = {
+
+                                center: new google.maps.LatLng(47.5404, -122.6362),
+                                zoom: 5,
+                                panControl: true,
+                                zoomControl: true,
+                                mapTypeControl: true,
+                                scaleControl: true,
+                                streetViewControl: true,
+                                overviewMapControl: true,
+                                rotateControl: true
+                            };
+                    var map = new google.maps.Map(mapCanvas, mapOptions);
+                        var marker = new google.maps.Marker ({
+                            position: myCenter
+                });
+                marker.setMap(map);
+
+
+                // Zoom to 9 when clicking on marker
+                google.maps.event.addListener(marker, 'click', function () {
+                        var pos = map.getZoom();
+                            map.setZoom(9);
+                        map.setCenter(marker.getPosition());
+                        window.setTimeout(function() {
+                            map.setZoom(pos);
+                        }, 3000);
+                });
+                }
+            </script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmXIfmOwG1Gl-QyLJUJuXKHZlXxMk7i9c&callback=myMap"></script>
+                
+    
+
+        
+<p id="mission"><strong>Jason Newquist's Mission Statement:</strong><br>        
+I am at my best when I feel I am making a valuable contribution to the given company or organization I am working for. If I feel what I am doing is making a difference, I push myself to accomplish my personal goals and the company's goals.
+I will try to prevent times when I am being micromanaged. I feel if I am constantly being watched over I am not doing my best work.
+I will enjoy my work by finding employment where I can I really love to keep myself busy with the next task. I am very objective orientated and am ready to do the next task.
+I will find enjoyment in my personal life through I love to spend time with friends. Anything and everything. As long as I am out and talking to and meeting new people, I am happy.
+I will find opportunities to use my natural talents and gifts such as My natural talent that I feel is my best is my ability to connect with everyone. I feel I have experienced a lot in my life that I can use to be able to relate to anyone.
+I can do anything I set my mind to. I will Travel and learn about many different cultures. I feel the world has so much to offer and I want to be a part of it.
+My life's journey is to be the hero by saving lives. I always picture that my life will end by saving someone else's life. I feel it would be someone I am super close to and I will be able to give wise last words before I go. My hope would be that the relationship I had with that person would be strong enough that they applied the advice I gave and their life changed for the better.
+I will be a person who I imagine my wife and children and grandchildren are all sitting at a big table to celebrate my birthday while I am being forced to wear a silly party hat. I would like them to say that I was the kindest and hardest working man they knew. I also wish that they could say that I taught them something valuable and was always there for them.
+My most important future contribution to others will be I feel that the most important thing I could do for them would be to do all the small things. Be there for important events, sad times, and challenging experiences. I feel all the small things add up to be something important.
+I will stop procrastinating and start working on: </p>
+            
+    <ul>
+        <li>I feel I should plan a little bit better for my future. There is a bunch of things that I say I am going to do but I have no plans to back them up.</li>   <li>I feel I should find a passion in all that I do. If I do this, I feel that my life will be much better than it already is.</li>
+    </ul>
+
+<p>I will strive to incorporate the following attributes into my life: </p>
+        
+    <ul>
+        <li>Sacrifice</li>
+        <li>Risk Taking</li>
+        <li>Patience</li>
+     </ul>
+        
+<p>I will constantly renew myself by focusing on the four dimensions of my life:</p>
+        
+    <ul>
+        <li>I believe making a plan to exercise and doing it is the most important thing I can do.</li>
+        <li>I believe reflecting upon the scriptures that I read more often would greatly influence my life.</li>
+        <li>I believe making everything I learn exciting to me in some way will help me tremendously.</li>
+        <li>I believe spending more time with friends I haven't seen in a while will affect me in a way that will benefit me a lot.</li>
+    </ul>
+    
+    <p id="ethics"><strong>Jason Newquist's Personal code of Ethics:</strong><br>
+    I believe that my responsibilities are to myself and to those who put their trust in me, both people in my personal life as well as in my professional life.  I will always strive to do my best in any situation and anything less is unwelcome.  Learning and progressing and two essential characteristics of who I am and what I stand for.  <br>
+	In my life, I will always a frim faith in my Heavenly Father.  I will not drop my standards to fit a “worldly” accommodation or practice.  I believe in being true, kind, optimistic, happy, and forgiving.  These I will always be and continue to improve upon.  I have a strong affix to knowledge.  I believe that the more knowledge when receives, the more that person can do and become.  I will strive to obtain all the education I can to be better prepared for any given situation.<br>
+	In regards to my professional life, I believe that hard work is essential.  I will always do whatever my boss and/or manager tells me to do in both a timely and competently manner unless the task conflicts with my personal ethics.  I believe in doing things right and on the first attempt.  I will always strive to be the type of employee that I would hire one day.  I believe that once under the management of the company, one is representing that company.  I will always be the type of employee that represents the company well and is an example to other employees around me. <br>
+	“How will this define me?” is the question that leads me to act or not act.  All that I do will be to become what my Heavenly Father knows I can become.  I will strive to reach my full potential to the best of my knowledge.  This is my belief and I stand by it.
+</p>
+        
+<h2 id="history">History of Oval Occasions</h2>
+<img src="images/park.jpg" alt="First park purchased" style="width: 25%;height: 25%">
+<img src="images/construction.JPG" alt="Construction of Oval Occasions Headquarters" style="width: 25%;height: 25%">
+<br>
+        
+<p> Oval occasions is a newer company that has been in the works for quite some time.  Founder and CEO, Jason Newquist, felt that this world needed something.  Something that the world was lacking and could benefit from.  From that thought process, Oval Occasions was born.  The business started off slower then Newquist expected it would go. In his own words he said: "Maybe I am lacking something in my planning or perhaps my product.  I don't understand why business isn't booming."  Business began to pick up after Newquist made a key purchase that would change the business forever.  Newquist purchased Gilbert park (see left picture) in Seattle to have something of his own.  The company, before it owned its venues, would rent the locations from the previous owners.  Newquist felt it was best to own the given locations.  In Newquist's own words he said: "I just felt the company needed something of its own.  Something we could call ours.  That way we could do what we liked with it."  Once Gilbert park seemed to be working out, Newquist and his business advisors got into the process of buying the venues and saving up until they could afford the next location.  After a few years of this, business began to pick up significantly.  In 2013, construction began on the Oval Occasions headquarters building(see right picture).  Business was a success and Newquist couldn't be happier with his accomplishments.  
+        
+</p>        
+        
+        
+<h2 id="company-today">Oval Occasions today</h2>
+
+<img src="images/headquarters.jpg" alt="Headquarters of Oval Occasions" style="width: 18.7%;height: 18.7%">
+<img src="images/yacht.jpg" alt="One of Oval Occasions yacht venues" style="width: 50%;height: 50%"><br>
+        
+        
+<p>Oval Occasions today is one of the most well known companies in the entertainment industry.  Joining the fortune 500 club last year(2016), Oval Occasions attributes its success to the hard work of its employees and its ever going expansion mission.  In Oval Occasions headquarters(see left picture) our staff is working tirelessly for you to have the best occasion money can buy.  With locations all over the united states, Oval Occasions promises a location near you.  Recently, the company has started doing offshore locations with our state of the art yacht venues(see right picture).  So book your event today!<br>
+    
+Because here at <strong>Oval Occasions</strong>, <i>we bring your event full circle.</i>
+</p>        
+    
+<a href="#top-of-page">Go to Top of page</a> 
+</body>
+</html>
+    
