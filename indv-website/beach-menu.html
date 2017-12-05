@@ -3,44 +3,74 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Beach Menu</title>
-<link href="../cit230/css/indv-styles.css" rel="stylesheet" type="text/css" >
+  <link href="../cit230/css/indv-styles.css" rel="stylesheet" type="text/css" >
 <style>
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif');
 @import url('https://fonts.googleapis.com/css?family=Cookie');
 </style>
+  <script type="text/javascript">
+    
+    function myOrder() {
+            document.write("<h3>Processing Order.  Please wait.</h3>");
+        }
+    </script>
 </head>
 
 <body>
-<h1>Beach Menu</h1>
-<p class="menu"> Beach Menu </p>
-    <ol>
-        Main dishes:
-        <ul>
-            <li>Pig Luau</li>
-            <li> Salmon  </li>
-            <li>Crab and Lobster  </li>
-        </ul>
-        Side Dishes:  
-        <ul>
-            <li>Fruit  </li>
-            <li>Macaroni salad  </li>
-            <li>Long rice </li>
-            <li>Poi  </li>
-            <li>Green salad  </li>
-            <li>Taro rolls  </li>
-        </ul>
-  
-</ol>
+<h1><img src="images/Sea%20turtle.png" alt="logo" style="width: 6%; height: 6%">Beach Menu</h1>
+
+  <nav>
+<ul>
+  <li><a href="beach-entertainment-hula.html">Hula Show</a></li>
+  <li><a href="beach-entertainment-flame.html">Flame-jugglers Show</a></li>
+    <li><a href="beach-entertainment-ukulele.html">Ukulele Performance</a></li>
+</ul>
+    </nav>
     
+<p class="menu"> Welcome to our beach menu!  Please select you main course and any sides you would like! </p>
     
-    <footer>
+      <h3>Main dishes:</h3>
+    <div class="page-layout">
+    
+       
+           <div class="page-item">Pig Luau<input type="radio" id="yes" name="likeit" value="Yes" checked="unchecked" /></div>
+          <div class="page-item">Salmon<input type="radio" id="yes" name="likeit" value="Yes" checked="checked" /></div>
+            <div class="page-item">Crab and Lobster<input type="radio" id="yes" name="likeit" value="Yes" checked="checked" /></div>
+    </div>
+        
+       <div class="page-layout">
+            <div class="page-item"><img src="images/pigluau.jpg" alt="pig" style="width:75%;height:75%"></div>
+            <div class="page-item"><img src="images/salmon.jpg" alt="salmon" style="width:75%;height:75%"></div>
+            <div class="page-item"><img src="images/crablobster.jpg" alt="crab" style="width:75%;height:75%"></div></div>
+        
+        
+    <h3>Side Dishes:</h3>  
+        <div class="page-layout">
+           <div class="page-layout">Fruit <input type="checkbox" id="cit" value="Computer Information Technology" checked>  </div>
+            <div class="page-layout">Macaroni salad  <input type="checkbox" id="cit" value="Computer Information Technology" checked></div> 
+           <div class="page-layout">Long Rice <input type="checkbox" id="cit" value="Computer Information Technology" checked></div>
+            <div class="page-layout">Poi  <input type="checkbox" id="cit" value="Computer Information Technology" checked></div>
+           <div class="page-layout">Green Salad <input type="checkbox" id="cit" value="Computer Information Technology" checked></div>
+            <div class="page-layout">Taro Rolls <input type="checkbox" id="cit" value="Computer Information Technology" checked></div> </div>
+            
+         <div class="page-layout">
+        <div class="page-item"><img src="images/fruit.png" alt="fruit" style="width:75%;height:75%"></div>
+        <div class="page-item"><img src="images/macsalad.jpg" alt="mac salad" style="width:75%;height:75%"></div>
+        <div class="page-item"><img src="images/rice.jpg" alt="rice" style="width:75%;height:75%"></div>
+        <div class="page-item"><img src="images/poi.jpeg" alt="poi" style="width:75%;height:75%"></div>
+        <div class="page-item"><img src="images/salad.jpg" alt="salad" style="width:75%;height:75%"></div>
+        <div class="page-item"><img src="images/taro.jpg" alt="taro" style="width:75%;height:75%"></div>
+            </div>
+     <input type="button" Value="Order from this Menu" onClick="myOrder()">
+    <p>Call 1-800-555-1234 to reach your event planner</p>
+
+<footer>
 <p>Additional Resources:</p>
     <ul>
-        <li><a href="indv-website/about-us.html">About us</a></li>
-        <li><a href="indv-website/customer-table.html">Top Customer(Table)</a></li>
-        <li><a href="indv-website/customer-list.html">Top Customer(List)</a></li>
+       <li><a href="about-us.html">About us</a></li>
+        <li><a href="customer-table.html">Top Customer(Table)</a></li>
+        <li><a href="customer-list.html">Top Customer(List)</a></li>
     </ul>
 </footer>
-</body>
-
+    </body>
 </html>
